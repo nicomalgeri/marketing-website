@@ -76,6 +76,7 @@
     /* ===== Logos ===== */
     .logos{margin-top:1.1rem;display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:12px}
     .logo{height:54px;border:1px solid var(--border);border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));position:relative;overflow:hidden}
+    .logo img{width:100%;height:100%;object-fit:contain}
     .shimmer::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.06) 45%,transparent 60%);transform:translateX(-100%);animation:sh 3s infinite}
     @keyframes sh{to{transform:translateX(100%)}}
 
@@ -159,13 +160,27 @@
     <!-- Trust strip -->
     <section class="container section fx">
       <p class="center muted">Trusted across sport, NGOs, tech, and ventures.</p>
-      <div class="logos">
-        <div class="logo shimmer" aria-label="Placeholder logo"></div>
-        <div class="logo shimmer" aria-label="Placeholder logo"></div>
-        <div class="logo shimmer" aria-label="Placeholder logo"></div>
-        <div class="logo shimmer" aria-label="Placeholder logo"></div>
-      </div>
-    </section>
+        <div class="logos">
+          <a class="logo" href="https://www.aftersportsconsultancy.com/" target="_blank" rel="noopener" aria-label="AfterSportsConsultancy">
+            <img src="https://cdn.prod.website-files.com/672e05a3f928ec4b133860ae/672e2e9462f9cc49db6c442b_Untitled%20design%20(5)-p-800.png" alt="AfterSportsConsultancy logo">
+          </a>
+          <a class="logo" href="https://www.footballismore.org/?lang=en" target="_blank" rel="noopener" aria-label="Football is More">
+            <img src="https://static.wixstatic.com/media/ced631_59eb8a81e78348189f8e324c2acf4ec6~mv2.png" alt="Football is More logo">
+          </a>
+          <a class="logo" href="https://sockatyes.co.uk/home.html" target="_blank" rel="noopener" aria-label="Sockatyes">
+            <img src="https://sockatyes.co.uk/assets/logohorizontal.webp" alt="Sockatyes logo">
+          </a>
+          <a class="logo" href="https://nicomalgeri.github.io/parkerlloydgroup/" target="_blank" rel="noopener" aria-label="Parker Lloyd Group">
+            <img src="https://nicomalgeri.github.io/parkerlloydgroup/logo.png" alt="Parker Lloyd Group logo">
+          </a>
+          <a class="logo" href="https://mecavalmecanizados.com/" target="_blank" rel="noopener" aria-label="Mecaval Mecanizados">
+            <img src="https://mecavalmecanizados.com/wp-content/uploads/2025/04/cropped-Untitled-design-2-1-1.png" alt="Mecaval Mecanizados logo">
+          </a>
+          <a class="logo" href="https://whynora.com" target="_blank" rel="noopener" aria-label="whynora">
+            <img src="https://whynora.com/cdn/shop/files/sin-fondo.png?v=1716491736&width=140" alt="whynora logo">
+          </a>
+        </div>
+      </section>
 
     <!-- Services -->
     <section id="services" class="container section fx">
