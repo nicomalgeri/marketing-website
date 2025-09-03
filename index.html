@@ -1,222 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NICKETING — Marketing that drives results</title>
-<meta name="description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://nicketing.com">
-<meta property="og:title" content="NICKETING — Marketing that drives results">
-<meta property="og:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nicketing.com">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NICKETING — Marketing that drives results">
-<meta name="twitter:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"NICKETING",
-  "url":"https://nicketing.com",
-  "sameAs":[]
-}
-</script>
-<style>
-:root{
-  --bg:#0b0c10;--panel:#111317;--text:#e6e7eb;--muted:#a6abb7;
-  --accent:#6ef3ff;--accent2:#9e8cff;--border:#1b1e25;
-  --radius:12px;--space:12px;--maxw:1120px;--shadow:0 8px 24px rgba(0,0,0,.28);
-}
-/* base */
-html{box-sizing:border-box;scroll-behavior:smooth;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,sans-serif;}
-*,*:before,*:after{box-sizing:inherit;margin:0;padding:0;}
-body{line-height:1.5;min-height:100vh;}
-a{color:var(--text);text-decoration:none;}a:hover{text-decoration:underline;}
-button{font:inherit;cursor:pointer;}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-.skip{position:absolute;top:-40px;left:0;background:var(--accent);color:#000;padding:0.5rem 1rem;z-index:100;}
-.skip:focus{top:0;}
-/* layout */
-.container{max-width:var(--maxw);margin:0 auto;padding:var(--space) calc(var(--space)*2);} 
-.btn{display:inline-block;padding:0.5rem 1rem;border:1px solid var(--accent);border-radius:9999px;transition:transform .2s;background:transparent;color:var(--text);} 
-.btn.primary{background:var(--accent);color:#000;border-color:var(--accent);} 
-.btn:hover{transform:scale(1.02);} 
-@media(prefers-reduced-motion:reduce){.btn{transition:none;} .btn:hover{transform:none;}}
-/* header */
-header{position:sticky;top:0;z-index:50;transition:background .3s,border-bottom .3s;}
-header .container{display:flex;justify-content:space-between;align-items:center;padding:var(--space) calc(var(--space)*2);} 
-header nav{display:flex;gap:1rem;align-items:center;} 
-header a{padding:0.25rem 0.5rem;} 
-header .cta{margin-left:1rem;} 
-header.scrolled{background:var(--panel);border-bottom:1px solid var(--border);box-shadow:var(--shadow);} 
-/* hero */
-.hero{position:relative;display:grid;place-content:center;text-align:center;min-height:100vh;} 
-.hero h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:1rem;} 
-.hero p{max-width:600px;margin:0 auto 2rem;color:var(--muted);} 
-.hero .actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;} 
-.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(at 25% 25%,var(--accent),transparent 50%),radial-gradient(at 75% 75%,var(--accent2),transparent 50%),var(--bg);opacity:.6;z-index:-1;} 
-@media(prefers-reduced-motion:no-preference){
-.hero:before{animation:move 20s linear infinite alternate;} 
-@keyframes move{from{transform:translate(-10%,-10%) scale(1);}to{transform:translate(10%,10%) scale(1.1);}}
-}
-@media(prefers-reduced-motion:reduce){.hero:before{animation:none;}}
-/* sections */
-main>section{content-visibility:auto;contain-intrinsic-size:1px 500px;}
-.brands{background:var(--panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border);} 
-.logos{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;padding:var(--space) 0;} 
-.logos li{width:120px;height:60px;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.05);} 
-.brands .caption{text-align:center;color:var(--muted);margin-bottom:var(--space);} 
-.services .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));} 
-.card{padding:1.5rem;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);} 
-.card h3{margin-bottom:.5rem;font-size:1.25rem;} 
-.card p{color:var(--muted);} 
-.sectors .tiles{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));} 
-.tile{padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);} 
-.tile h3{margin-bottom:.5rem;} 
-.tile p{color:var(--muted);} 
-.results .cases{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));} 
-.case{padding:1.5rem;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);} 
-.case p{color:var(--muted);} 
-.case .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;} 
-.case .badges span{background:var(--accent2);color:#000;border-radius:9999px;padding:.25rem .5rem;font-size:.875rem;} 
-.pricing ul{list-style:disc inside;margin-bottom:1rem;} 
-.pricing .note{color:var(--muted);} 
-.about .bullets{display:flex;gap:1rem;list-style:none;margin-top:1rem;flex-wrap:wrap;} 
-.about .bullets li{background:var(--panel);padding:.5rem 1rem;border:1px solid var(--border);border-radius:var(--radius);} 
-.cta{text-align:center;background:var(--panel);padding:3rem 0;} 
-.cta .actions{margin-top:1rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;} 
-.contact form{display:grid;gap:1rem;max-width:600px;} 
-.contact label{display:grid;gap:.5rem;} 
-.contact input,.contact textarea{padding:.5rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--panel);color:var(--text);} 
-.contact textarea{min-height:120px;} 
-.toast{margin-top:1rem;padding:.75rem 1rem;background:var(--accent);color:#000;border-radius:var(--radius);} 
-footer{background:var(--panel);border-top:1px solid var(--border);font-size:.875rem;} 
-footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;} 
-footer nav{display:flex;gap:1rem;} 
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NICKETING — Marketing that drives results</title>
+  <meta name="description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures." />
+  <meta property="og:title" content="NICKETING — Marketing that drives results" />
+  <meta property="og:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nicketing.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NICKETING — Marketing that drives results" />
+  <meta name="twitter:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures." />
+  <link rel="canonical" href="https://nicketing.com" />
+  <style>
+    :root{
+      --bg:#0b0c10; --bg-2:#0a0c12; --panel:#0f1116; --panel-2:#0b0d12;
+      --text:#e7e9ee; --muted:#a6abb7; --border:#1b1e25;
+      --accent:#6ef3ff; --accent2:#9e8cff; --ok:#7CFFA5;
+      --radius:14px; --radius-lg:18px; --space:16px; --maxw:1140px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,sans-serif;color:var(--text);line-height:1.6;background:
+      radial-gradient(1200px 800px at 10% -10%,#10131b 0%,transparent 60%),
+      radial-gradient(1000px 600px at 90% -20%,#0e1020 0%,transparent 60%),
+      linear-gradient(180deg,var(--bg),var(--bg-2));}
+
+    /* ===== A11y ===== */
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{position:fixed;left:1rem;top:1rem;width:auto;height:auto;background:#fff;color:#000;padding:.5rem .75rem;border-radius:8px;z-index:2000}
+
+    /* ===== Layout helpers ===== */
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 var(--space)}
+    .section{padding:6rem 0}
+    .center{text-align:center}
+    .muted{color:var(--muted)}
+
+    /* ===== Header / Nav ===== */
+    header{position:fixed;inset:0 0 auto 0;height:76px;display:flex;align-items:center;justify-content:center;z-index:1000}
+    .nav{width:min(100%,var(--maxw));display:flex;align-items:center;justify-content:space-between;padding:0 var(--space)}
+    .brand{font-weight:800;letter-spacing:.6px}
+    .bar{display:flex;gap:.25rem;align-items:center;border:1px solid rgba(255,255,255,.06);background:rgba(18,20,28,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:.35rem .5rem;border-radius:999px;box-shadow:0 1px 0 rgba(255,255,255,.05) inset}
+    header.solid .bar{background:rgba(18,20,28,.75)}
+    .lnk{position:relative;display:inline-block;padding:.55rem .8rem;color:var(--text)}
+    .lnk::after{content:"";position:absolute;left:.7rem;right:.7rem;bottom:.25rem;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+    .lnk:hover::after,.lnk.active::after{transform:scaleX(1)}
+
+    /* ===== Buttons ===== */
+    .btn{padding:.75rem 1.2rem;border-radius:9999px;border:1px solid var(--accent);transition:transform .18s,box-shadow .18s,background .18s;display:inline-block;white-space:nowrap}
+    .btn.primary{background:linear-gradient(180deg,var(--accent),#9ff7ff);color:#000;box-shadow:0 8px 20px rgba(110,243,255,.25)}
+    .btn.ghost{background:transparent;color:var(--accent)}
+    .btn:hover{transform:translateY(-1px)}
+
+    /* ===== Hero ===== */
+    .hero{position:relative;display:grid;place-items:center;min-height:100vh;overflow:hidden}
+    .hero-wrap{position:relative;text-align:center;z-index:2;padding:calc(76px + 3.25rem) var(--space) 3rem}
+    .hero h1{font-size:clamp(2.4rem,4.5vw,4rem);line-height:1.1;margin-bottom:.6rem}
+    .lead{color:var(--muted);max-width:820px;margin:0 auto 1.2rem}
+    .mesh{position:absolute;inset:-30% -10% -10% -10%;background:
+      radial-gradient(40% 30% at 20% 20%, rgba(110,243,255,.16), transparent 60%),
+      radial-gradient(30% 24% at 80% 10%, rgba(158,140,255,.14), transparent 60%),
+      conic-gradient(from 210deg at 50% 50%, rgba(110,243,255,.06), rgba(158,140,255,.06) 40%, transparent 60%);
+      filter:blur(40px);transform:translateZ(0);animation:float 24s ease-in-out infinite alternate}
+    @keyframes float{0%{transform:translate3d(0,0,0)}50%{transform:translate3d(2%,-2%,0)}100%{transform:translate3d(-2%,1%,0)}}
+    @media (prefers-reduced-motion:reduce){.mesh{animation:none}}
+    .hero-hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:.85rem;color:var(--muted);letter-spacing:.2em}
+
+    /* ===== Reveal on scroll ===== */
+    .fx,.fx-reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+    .fx.in,.fx-reveal.in{opacity:1;transform:none}
+    .fx-reveal{transition-delay:var(--d,0s)}
+
+    /* ===== Logos ===== */
+    .logos{margin-top:1.1rem;display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:12px}
+    .logo{height:54px;border:1px solid var(--border);border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));position:relative;overflow:hidden}
+    .shimmer::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.06) 45%,transparent 60%);transform:translateX(-100%);animation:sh 3s infinite}
+    @keyframes sh{to{transform:translateX(100%)}}
+
+    /* ===== Cards / grids ===== */
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
+    .lift{position:relative}
+    .lift::after{content:"";position:absolute;inset:-1px;border-radius:calc(var(--radius) + 1px);padding:1px;background:linear-gradient(140deg,rgba(110,243,255,.45),rgba(158,140,255,.25),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.0;transition:opacity .25s}
+    .lift:hover{transform:translateY(-2px)}
+    .lift:hover::after{opacity:1}
+
+    /* ===== Section titles ===== */
+    .section-title{font-size:clamp(1.4rem,2.2vw,2rem);margin-bottom:1rem}
+
+    /* ===== Tiles ===== */
+    .tiles .tile{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--border);border-radius:16px;padding:1.6rem;min-height:140px;display:flex;flex-direction:column;gap:.4rem}
+
+    /* ===== Results badges ===== */
+    .results .kpi ul{list-style:none;margin-top:.5rem}
+    .badge{display:inline-block;margin:.35rem .35rem 0 0;padding:.35rem .6rem;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);font-size:.85rem}
+
+    /* ===== Pricing ===== */
+    .price{list-style:none;margin-top:1rem}
+    .price li{display:flex;justify-content:space-between;gap:1rem;padding:1rem 1.25rem;border:1px solid var(--border);border-radius:12px;background:linear-gradient(180deg,var(--panel),var(--panel-2));margin-bottom:.6rem}
+    .price strong{color:#fff}
+
+    /* ===== About bullets ===== */
+    .bullets{display:flex;gap:.6rem;margin-top:.6rem;flex-wrap:wrap}
+    .bullets li{border:1px solid var(--border);border-radius:999px;padding:.4rem .8rem;background:rgba(255,255,255,.04)}
+
+    /* ===== CTA band ===== */
+    .cta-band{position:relative;padding:4.8rem 0;background:radial-gradient(60% 100% at 50% 0%, rgba(110,243,255,.08), transparent),linear-gradient(180deg, rgba(158,140,255,.06), transparent)}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+    /* ===== Forms & toast ===== */
+    .form input,.form textarea{width:100%;padding:.9rem 1rem;margin-bottom:.9rem;border-radius:12px;border:1px solid var(--border);background:var(--panel);color:var(--text)}
+    .toast{position:fixed;right:16px;bottom:16px;background:linear-gradient(180deg,#c9f9d9,#9bf0bf);color:#08260f;border-radius:12px;padding:.85rem 1rem;box-shadow:var(--shadow);opacity:0;transform:translateY(6px);transition:opacity .25s,transform .25s}
+    .toast.show{opacity:1;transform:none}
+
+    /* ===== Footer ===== */
+    .foot{padding:2.4rem 1rem;text-align:center;color:var(--muted)}
+
+    /* ===== Responsive ===== */
+    @media (max-width:720px){
+      .logos{grid-template-columns:repeat(2,1fr)}
+      .cta-inner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
 </head>
 <body>
-<a href="#main" class="skip">Skip to content</a>
-<header>
-  <div class="container">
-    <div class="logo">NICKETING</div>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#sectors">Sectors</a>
-      <a href="#results">Results</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="mailto:info@nicketing.com" class="btn primary cta">Book a consultation</a>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <section class="hero" id="work">
-    <h1>Marketing that drives results.</h1>
-    <p>We help brands, clubs, and organisations grow with smart strategy, creative design, and digital execution.</p>
-    <div class="actions">
-      <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
-      <a href="#services" class="btn">See capabilities</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="hdr" aria-label="Primary">
+    <div class="nav">
+      <div class="brand">NICKETING</div>
+      <nav class="bar" aria-label="Main navigation">
+        <a class="lnk" href="#services">Services</a>
+        <a class="lnk" href="#sectors">Sectors</a>
+        <a class="lnk" href="#results">Results</a>
+        <a class="lnk" href="#about">About</a>
+        <a class="lnk" href="#contact">Contact</a>
+        <a class="btn primary" href="mailto:info@nicketing.com">Book a consultation</a>
+      </nav>
     </div>
-  </section>
-  <section class="brands" aria-label="Trusted brands">
-    <ul class="logos" aria-hidden="true">
-      <li></li><li></li><li></li><li></li><li></li>
-    </ul>
-    <p class="caption">Trusted across sport, NGOs, tech, and ventures.</p>
-  </section>
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Core capabilities designed to deliver outcomes.</h2>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero viewport">
+      <div class="hero-wrap">
+        <h1 class="fx-reveal">Marketing that drives results.</h1>
+        <p class="lead fx-reveal" style="--d:.08s">We help brands, clubs, and organisations grow with smart strategy, creative design, and digital execution.</p>
+        <div class="actions fx-reveal" style="--d:.16s">
+          <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
+          <a href="#services" class="btn ghost">See capabilities</a>
+        </div>
+        <div class="mesh" aria-hidden="true"></div>
+      </div>
+      <div class="hero-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="container section fx">
+      <p class="center muted">Trusted across sport, NGOs, tech, and ventures.</p>
+      <div class="logos">
+        <div class="logo shimmer" aria-label="Placeholder logo"></div>
+        <div class="logo shimmer" aria-label="Placeholder logo"></div>
+        <div class="logo shimmer" aria-label="Placeholder logo"></div>
+        <div class="logo shimmer" aria-label="Placeholder logo"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container section fx">
+      <h2 class="section-title">Core capabilities designed to deliver outcomes.</h2>
       <div class="grid">
-        <div class="card"><h3>Branding &amp; Rebranding</h3><p>Identity, guidelines, messaging, positioning.</p></div>
-        <div class="card"><h3>Websites &amp; UX</h3><p>From scratch builds, migrations, speed optimisation, SEO basics.</p></div>
-        <div class="card"><h3>Content &amp; Social</h3><p>Editorial calendars, design, short-form video.</p></div>
-        <div class="card"><h3>Lead Generation</h3><p>ICP, lists, outreach, landing pages, conversion.</p></div>
-        <div class="card"><h3>Digital Sales Enablement</h3><p>Assets, sequences, CRM handoff.</p></div>
-        <div class="card"><h3>Ongoing Management</h3><p>Blogs/news, retained design, reporting.</p></div>
+        <article class="card lift"><h3>Branding & Rebranding</h3><p>Identity, guidelines, messaging, positioning.</p></article>
+        <article class="card lift"><h3>Websites & UX</h3><p>From scratch builds, migrations, speed optimisation, SEO basics.</p></article>
+        <article class="card lift"><h3>Content & Social</h3><p>Editorial calendars, design, short-form video.</p></article>
+        <article class="card lift"><h3>Lead Generation</h3><p>ICP, lists, outreach, landing pages, conversion.</p></article>
+        <article class="card lift"><h3>Digital Sales Enablement</h3><p>Assets, sequences, CRM handoff.</p></article>
+        <article class="card lift"><h3>Ongoing Management</h3><p>Blogs/news, retained design, reporting.</p></article>
       </div>
-    </div>
-  </section>
-  <section id="sectors" class="sectors">
-    <div class="container">
-      <h2>Focused expertise.</h2>
-      <div class="tiles">
-        <div class="tile"><h3>Sport</h3><p>Clubs, players, agencies; fan engagement; matchday creative.</p></div>
-        <div class="tile"><h3>NGOs</h3><p>Clear messaging, donor journeys, campaigns.</p></div>
-        <div class="tile"><h3>Technology</h3><p>Product branding, GTM, landing pages.</p></div>
-        <div class="tile"><h3>Ventures &amp; Corporate</h3><p>Finance, lifestyle, entrepreneurial brands.</p></div>
+    </section>
+
+    <!-- Sectors -->
+    <section id="sectors" class="container section fx">
+      <h2 class="section-title">Focused expertise.</h2>
+      <div class="grid tiles">
+        <article class="tile"><h3>Sport</h3><p>Clubs, players, agencies; fan engagement; matchday creative.</p></article>
+        <article class="tile"><h3>NGOs</h3><p>Clear messaging, donor journeys, campaigns.</p></article>
+        <article class="tile"><h3>Technology</h3><p>Product branding, GTM, landing pages.</p></article>
+        <article class="tile"><h3>Ventures & Corporate</h3><p>Finance, lifestyle, entrepreneurial brands.</p></article>
       </div>
-    </div>
-  </section>
-  <section id="results" class="results">
-    <div class="container">
-      <h2>Selected outcomes.</h2>
-      <div class="cases">
-        <div class="case"><h3>Football Is More</h3><p class="problem">Challenge: slow, outdated site.</p><p class="solution">Solution: website redesign + ongoing content.</p><div class="badges"><span>+48% page speed</span><span>+35% time on page</span></div></div>
-        <div class="case"><h3>ASC – After Sports Consultancy</h3><p class="problem">Challenge: inconsistent brand presence.</p><p class="solution">Solution: social + design system.</p><div class="badges"><span>+27% follower growth in 90 days</span></div></div>
-        <div class="case"><h3>SKOUTEX</h3><p class="problem">Challenge: early venture with unclear narrative.</p><p class="solution">Solution: strategy, product site, GTM assets.</p><div class="badges"><span>Investor-ready narrative</span><span>Launch assets</span></div></div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="container section fx">
+      <h2 class="section-title">Selected outcomes.</h2>
+      <div class="grid results">
+        <article class="card kpi">
+          <header><h3>Football Is More</h3></header>
+          <ul>
+            <li>Website redesign + ongoing content.</li>
+            <li class="badge">+48% page speed</li>
+            <li class="badge">+35% time on page</li>
+          </ul>
+        </article>
+        <article class="card kpi">
+          <header><h3>ASC – After Sports Consultancy</h3></header>
+          <ul>
+            <li>Social + design system.</li>
+            <li class="badge">+27% follower growth</li>
+            <li class="badge">90 days</li>
+          </ul>
+        </article>
+        <article class="card kpi">
+          <header><h3>SKOUTEX</h3></header>
+          <ul>
+            <li>Strategy, product site, GTM assets.</li>
+            <li class="badge">Investor‑ready narrative</li>
+            <li class="badge">Launch assets</li>
+          </ul>
+        </article>
       </div>
-    </div>
-  </section>
-  <section class="pricing">
-    <div class="container">
-      <h2>Simple, transparent starting points.</h2>
-      <ul>
-        <li>Website build (from £3,000–£4,000)</li>
-        <li>Retainer: Content/Social/Design/Blog (from £300/month)</li>
-        <li>Optional: Lead Gen sprints (POA)</li>
+    </section>
+
+    <!-- Offer -->
+    <section id="offer" class="container section fx">
+      <h2 class="section-title">Simple, transparent starting points.</h2>
+      <ul class="price">
+        <li><span>Website build</span><strong>from £3,000–£4,000</strong></li>
+        <li><span>Retainer: Content/Social/Design/Blog</span><strong>from £300/month</strong></li>
+        <li><span>Lead Gen sprints</span><strong>POA</strong></li>
       </ul>
-      <p class="note">Focus markets: UK, Switzerland, Austria, Germany, US.</p>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Built for speed and outcomes.</h2>
+      <p class="muted">Focus markets: UK, Switzerland, Austria, Germany, US.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section fx">
+      <h2 class="section-title">Built for speed and outcomes.</h2>
       <p>We combine strategy, creative, and execution to move brands forward. Fast builds. Clear reporting. Measurable outcomes.</p>
-      <ul class="bullets"><li>Speed</li><li>Clarity</li><li>Results</li></ul>
-    </div>
-  </section>
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to grow?</h2>
-      <div class="actions">
-        <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
-        <a href="mailto:info@nicketing.com" class="btn">Request a proposal</a>
+      <ul class="bullets">
+        <li>Speed</li><li>Clarity</li><li>Results</li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band fx">
+      <div class="container cta-inner">
+        <h2>Ready to grow?</h2>
+        <div class="actions">
+          <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
+          <a href="mailto:info@nicketing.com" class="btn ghost">Request a proposal</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <label><span>Name</span><input type="text" name="name" required></label>
-        <label><span>Email</span><input type="email" name="email" required></label>
-        <label><span>Message</span><textarea name="message" required></textarea></label>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section fx">
+      <h2 class="section-title">Contact</h2>
+      <form id="contactForm" class="form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
         <button type="submit" class="btn primary">Send</button>
       </form>
-      <div id="toast" class="toast" role="status" aria-live="polite" hidden>Thanks — we’ll be in touch.</div>
-    </div>
-  </section>
-</main>
-<footer>
-  <div class="container">
-    <small>© <span id="year"></span> NICKETING. All rights reserved.</small>
-    <nav><a href="#">Privacy</a><a href="#">Terms</a></nav>
-  </div>
-</footer>
-<script>
-const header=document.querySelector('header');
-const form=document.getElementById('contact-form');
-const toast=document.getElementById('toast');
-const year=document.getElementById('year');
-year.textContent=new Date().getFullYear();
-window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>24));
-form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);console.log(Object.fromEntries(data.entries()));toast.hidden=false;setTimeout(()=>toast.hidden=true,3000);form.reset();});
-</script>
+      <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>Thanks — we’ll be in touch.</div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© 2025 NICKETING. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Header solid on scroll + active link underline
+    const hdr=document.getElementById('hdr');
+    const links=[...document.querySelectorAll('.bar .lnk')];
+    const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const makeSolid=()=>hdr.classList.toggle('solid',window.scrollY>24);
+    window.addEventListener('scroll',makeSolid,{passive:true});
+    makeSolid();
+
+    // Intersection-based reveal animations
+    const reveal=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); reveal.unobserve(e.target);} });
+    },{threshold:0.12});
+    document.querySelectorAll('.fx, .fx-reveal').forEach(el=>reveal.observe(el));
+
+    // Scrollspy highlight
+    const spy=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        const id='#'+entry.target.id;
+        const link=links.find(l=>l.getAttribute('href')===id);
+        if(link){ link.classList.toggle('active', entry.isIntersecting && entry.intersectionRatio>0.4); }
+      });
+    },{rootMargin:'-40% 0px -55% 0px',threshold:[0,0.4,1]});
+    sections.forEach(sec=> spy.observe(sec));
+
+    // Contact form (no backend)
+    const form=document.getElementById('contactForm');
+    const toast=document.getElementById('toast');
+    form.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      const data=Object.fromEntries(new FormData(form).entries());
+      console.log('Form submitted',data);
+      toast.hidden=false; toast.classList.add('show');
+      setTimeout(()=>{ toast.classList.remove('show'); toast.hidden=true; },2600);
+      form.reset();
+    });
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NICKETING","url":"https://nicketing.com","sameAs":[]}</script>
 </body>
 </html>
