@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NICKETING — Marketing that drives results</title>
+<meta name="description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://nicketing.com">
+<meta property="og:title" content="NICKETING — Marketing that drives results">
+<meta property="og:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nicketing.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NICKETING — Marketing that drives results">
+<meta name="twitter:description" content="Strategy, design, websites, content, and lead generation for sport, NGOs, tech, and ventures.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"NICKETING",
+  "url":"https://nicketing.com",
+  "sameAs":[]
+}
+</script>
+<style>
+:root{
+  --bg:#0b0c10;--panel:#111317;--text:#e6e7eb;--muted:#a6abb7;
+  --accent:#6ef3ff;--accent2:#9e8cff;--border:#1b1e25;
+  --radius:12px;--space:12px;--maxw:1120px;--shadow:0 8px 24px rgba(0,0,0,.28);
+}
+/* base */
+html{box-sizing:border-box;scroll-behavior:smooth;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,sans-serif;}
+*,*:before,*:after{box-sizing:inherit;margin:0;padding:0;}
+body{line-height:1.5;min-height:100vh;}
+a{color:var(--text);text-decoration:none;}a:hover{text-decoration:underline;}
+button{font:inherit;cursor:pointer;}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+.skip{position:absolute;top:-40px;left:0;background:var(--accent);color:#000;padding:0.5rem 1rem;z-index:100;}
+.skip:focus{top:0;}
+/* layout */
+.container{max-width:var(--maxw);margin:0 auto;padding:var(--space) calc(var(--space)*2);} 
+.btn{display:inline-block;padding:0.5rem 1rem;border:1px solid var(--accent);border-radius:9999px;transition:transform .2s;background:transparent;color:var(--text);} 
+.btn.primary{background:var(--accent);color:#000;border-color:var(--accent);} 
+.btn:hover{transform:scale(1.02);} 
+@media(prefers-reduced-motion:reduce){.btn{transition:none;} .btn:hover{transform:none;}}
+/* header */
+header{position:sticky;top:0;z-index:50;transition:background .3s,border-bottom .3s;}
+header .container{display:flex;justify-content:space-between;align-items:center;padding:var(--space) calc(var(--space)*2);} 
+header nav{display:flex;gap:1rem;align-items:center;} 
+header a{padding:0.25rem 0.5rem;} 
+header .cta{margin-left:1rem;} 
+header.scrolled{background:var(--panel);border-bottom:1px solid var(--border);box-shadow:var(--shadow);} 
+/* hero */
+.hero{position:relative;display:grid;place-content:center;text-align:center;min-height:100vh;} 
+.hero h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:1rem;} 
+.hero p{max-width:600px;margin:0 auto 2rem;color:var(--muted);} 
+.hero .actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;} 
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(at 25% 25%,var(--accent),transparent 50%),radial-gradient(at 75% 75%,var(--accent2),transparent 50%),var(--bg);opacity:.6;z-index:-1;} 
+@media(prefers-reduced-motion:no-preference){
+.hero:before{animation:move 20s linear infinite alternate;} 
+@keyframes move{from{transform:translate(-10%,-10%) scale(1);}to{transform:translate(10%,10%) scale(1.1);}}
+}
+@media(prefers-reduced-motion:reduce){.hero:before{animation:none;}}
+/* sections */
+main>section{content-visibility:auto;contain-intrinsic-size:1px 500px;}
+.brands{background:var(--panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border);} 
+.logos{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;padding:var(--space) 0;} 
+.logos li{width:120px;height:60px;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.05);} 
+.brands .caption{text-align:center;color:var(--muted);margin-bottom:var(--space);} 
+.services .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));} 
+.card{padding:1.5rem;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);} 
+.card h3{margin-bottom:.5rem;font-size:1.25rem;} 
+.card p{color:var(--muted);} 
+.sectors .tiles{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));} 
+.tile{padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);} 
+.tile h3{margin-bottom:.5rem;} 
+.tile p{color:var(--muted);} 
+.results .cases{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));} 
+.case{padding:1.5rem;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);} 
+.case p{color:var(--muted);} 
+.case .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;} 
+.case .badges span{background:var(--accent2);color:#000;border-radius:9999px;padding:.25rem .5rem;font-size:.875rem;} 
+.pricing ul{list-style:disc inside;margin-bottom:1rem;} 
+.pricing .note{color:var(--muted);} 
+.about .bullets{display:flex;gap:1rem;list-style:none;margin-top:1rem;flex-wrap:wrap;} 
+.about .bullets li{background:var(--panel);padding:.5rem 1rem;border:1px solid var(--border);border-radius:var(--radius);} 
+.cta{text-align:center;background:var(--panel);padding:3rem 0;} 
+.cta .actions{margin-top:1rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;} 
+.contact form{display:grid;gap:1rem;max-width:600px;} 
+.contact label{display:grid;gap:.5rem;} 
+.contact input,.contact textarea{padding:.5rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--panel);color:var(--text);} 
+.contact textarea{min-height:120px;} 
+.toast{margin-top:1rem;padding:.75rem 1rem;background:var(--accent);color:#000;border-radius:var(--radius);} 
+footer{background:var(--panel);border-top:1px solid var(--border);font-size:.875rem;} 
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;} 
+footer nav{display:flex;gap:1rem;} 
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<header>
+  <div class="container">
+    <div class="logo">NICKETING</div>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#results">Results</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:info@nicketing.com" class="btn primary cta">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="work">
+    <h1>Marketing that drives results.</h1>
+    <p>We help brands, clubs, and organisations grow with smart strategy, creative design, and digital execution.</p>
+    <div class="actions">
+      <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
+      <a href="#services" class="btn">See capabilities</a>
+    </div>
+  </section>
+  <section class="brands" aria-label="Trusted brands">
+    <ul class="logos" aria-hidden="true">
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+    <p class="caption">Trusted across sport, NGOs, tech, and ventures.</p>
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Core capabilities designed to deliver outcomes.</h2>
+      <div class="grid">
+        <div class="card"><h3>Branding &amp; Rebranding</h3><p>Identity, guidelines, messaging, positioning.</p></div>
+        <div class="card"><h3>Websites &amp; UX</h3><p>From scratch builds, migrations, speed optimisation, SEO basics.</p></div>
+        <div class="card"><h3>Content &amp; Social</h3><p>Editorial calendars, design, short-form video.</p></div>
+        <div class="card"><h3>Lead Generation</h3><p>ICP, lists, outreach, landing pages, conversion.</p></div>
+        <div class="card"><h3>Digital Sales Enablement</h3><p>Assets, sequences, CRM handoff.</p></div>
+        <div class="card"><h3>Ongoing Management</h3><p>Blogs/news, retained design, reporting.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="sectors" class="sectors">
+    <div class="container">
+      <h2>Focused expertise.</h2>
+      <div class="tiles">
+        <div class="tile"><h3>Sport</h3><p>Clubs, players, agencies; fan engagement; matchday creative.</p></div>
+        <div class="tile"><h3>NGOs</h3><p>Clear messaging, donor journeys, campaigns.</p></div>
+        <div class="tile"><h3>Technology</h3><p>Product branding, GTM, landing pages.</p></div>
+        <div class="tile"><h3>Ventures &amp; Corporate</h3><p>Finance, lifestyle, entrepreneurial brands.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="results" class="results">
+    <div class="container">
+      <h2>Selected outcomes.</h2>
+      <div class="cases">
+        <div class="case"><h3>Football Is More</h3><p class="problem">Challenge: slow, outdated site.</p><p class="solution">Solution: website redesign + ongoing content.</p><div class="badges"><span>+48% page speed</span><span>+35% time on page</span></div></div>
+        <div class="case"><h3>ASC – After Sports Consultancy</h3><p class="problem">Challenge: inconsistent brand presence.</p><p class="solution">Solution: social + design system.</p><div class="badges"><span>+27% follower growth in 90 days</span></div></div>
+        <div class="case"><h3>SKOUTEX</h3><p class="problem">Challenge: early venture with unclear narrative.</p><p class="solution">Solution: strategy, product site, GTM assets.</p><div class="badges"><span>Investor-ready narrative</span><span>Launch assets</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing">
+    <div class="container">
+      <h2>Simple, transparent starting points.</h2>
+      <ul>
+        <li>Website build (from £3,000–£4,000)</li>
+        <li>Retainer: Content/Social/Design/Blog (from £300/month)</li>
+        <li>Optional: Lead Gen sprints (POA)</li>
+      </ul>
+      <p class="note">Focus markets: UK, Switzerland, Austria, Germany, US.</p>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Built for speed and outcomes.</h2>
+      <p>We combine strategy, creative, and execution to move brands forward. Fast builds. Clear reporting. Measurable outcomes.</p>
+      <ul class="bullets"><li>Speed</li><li>Clarity</li><li>Results</li></ul>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to grow?</h2>
+      <div class="actions">
+        <a href="mailto:info@nicketing.com" class="btn primary">Book a consultation</a>
+        <a href="mailto:info@nicketing.com" class="btn">Request a proposal</a>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label><span>Name</span><input type="text" name="name" required></label>
+        <label><span>Email</span><input type="email" name="email" required></label>
+        <label><span>Message</span><textarea name="message" required></textarea></label>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+      <div id="toast" class="toast" role="status" aria-live="polite" hidden>Thanks — we’ll be in touch.</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <small>© <span id="year"></span> NICKETING. All rights reserved.</small>
+    <nav><a href="#">Privacy</a><a href="#">Terms</a></nav>
+  </div>
+</footer>
+<script>
+const header=document.querySelector('header');
+const form=document.getElementById('contact-form');
+const toast=document.getElementById('toast');
+const year=document.getElementById('year');
+year.textContent=new Date().getFullYear();
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>24));
+form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);console.log(Object.fromEntries(data.entries()));toast.hidden=false;setTimeout(()=>toast.hidden=true,3000);form.reset();});
+</script>
+</body>
+</html>
