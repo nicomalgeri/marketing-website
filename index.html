@@ -41,7 +41,7 @@
     /* ===== Header / Nav ===== */
     header{position:fixed;inset:0 0 auto 0;height:76px;display:flex;align-items:center;justify-content:center;z-index:1000}
     .nav{width:min(100%,var(--maxw));display:flex;align-items:center;justify-content:space-between;padding:0 var(--space)}
-    .brand{font-weight:800;letter-spacing:.6px}
+    .brand{text-decoration:none;color:var(--text);font-weight:800;letter-spacing:.6px}
     .bar{display:flex;gap:.25rem;align-items:center;border:1px solid rgba(255,255,255,.06);background:rgba(18,20,28,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:.35rem .5rem;border-radius:999px;box-shadow:0 1px 0 rgba(255,255,255,.05) inset}
     header.solid .bar{background:rgba(18,20,28,.75)}
     .lnk{position:relative;display:inline-block;padding:.55rem .8rem;color:var(--text)}
@@ -129,7 +129,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header id="hdr" aria-label="Primary">
     <div class="nav">
-      <div class="brand">NICKETING</div>
+      <a class="brand" href="/">NICKETING</a>
       <nav class="bar" aria-label="Main navigation">
         <a class="lnk" href="#services">Services</a>
         <a class="lnk" href="#sectors">Sectors</a>
